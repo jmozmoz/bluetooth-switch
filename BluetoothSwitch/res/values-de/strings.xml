@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="btSwitchWidgetName">BT Switch</string>
+<string name="btSwitchAdvWidgetName">BT Switch Advanced</string>
+<string name="noBtDevice">Kein Bluetooth-Gerät gefunden !</string>
+<string name="enableBT">Aktivieren von Bluetooth</string>
+<string name="disableBT">Deaktivieren Bluetooth</string>
+<string name="btDiscoverable">Das Gerät ist erkennbar</string>
+<string name="btConnectable">Das Gerät ist anschlussfertig</string>
+<string name="btNoScan">Scan Mode Off</string>
+<string name="btError">Bluetooth Fehler</string>
+<string name="btConnected">Gerät angeschlossen</string>
+<string name="btDisConnected">Gerät getrennt</string>
+<string name="btOff">Bluetooth Aus</string>
+<string name="btOn">Bluetooth Auf</string>
+</resources>

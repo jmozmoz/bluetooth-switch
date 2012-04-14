@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.aispl.btswitch" android:versionName="1.6" android:versionCode="7">
+	<application android:icon="@drawable/icon" android:label="@string/btSwitchWidgetName">
+		<service android:name=".BtAdvWidgetUpdateService" />
+		<service android:name=".BtWidgetUpdateService" />
+
+		<receiver android:name=".BtSwitchAdvWidget" android:label="@string/btSwitchAdvWidgetName">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+				<!--
+					Broadcast Receiver that will also process our widget click action
+				-->
+				<action android:name="com.aispl.BtSwitchAdvWidget.ACTION_WIDGET_CLICK" />
+				<action android:name="com.aispl.BtSwitchAdvWidget.ACTION_WIDGET_SETTINGS_CLICK" />
+				<!--
+					Broadcast Receiver that will also process Bluetooth state changed
+				-->
+				<action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+				<!--
+					Broadcast Receiver that will also process Bluetooth Local Name changed
+				-->
+				<action android:name="android.bluetooth.adapter.action.LOCAL_NAME_CHANGED" />
+				<!--
+					Broadcast Receiver that will also process Bluetooth Scan Mode Changed
+				-->
+				<action android:name="android.bluetooth.adapter.action.SCAN_MODE_CHANGED" />
+				<!--
+					Broadcast Receiver that will also process Bluetooth Scan Mode Changed
+				-->
+				<action android:name="android.bluetooth.device.action.ACL_CONNECTED" />
+				<!--
+					Broadcast Receiver that will also process Bluetooth Scan Mode Changed
+				-->
+				<action android:name="android.bluetooth.device.action.ACL_DISCONNECTED" />
+			</intent-filter>
+			<meta-data android:name="android.appwidget.provider"
+				android:resource="@xml/bt_switch_widget_adv_info" />
+		</receiver>
+				<!-- Broadcast Receiver that will process AppWidget updates -->
+		<receiver android:name=".BtSwitchWidget" android:label="@string/btSwitchWidgetName">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+				<!--
+					Broadcast Receiver that will also process our widget click action
+				-->
+				<action android:name="com.aispl.BtSwitchWidget.ACTION_WIDGET_CLICK" />
+				<!--
+					Broadcast Receiver that will also process Bluetooth state changed
+				-->
+				<action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+			</intent-filter>
+			<meta-data android:name="android.appwidget.provider"
+				android:resource="@xml/bt_switch_widget_info" />
+		</receiver>
+	</application>
+	<uses-sdk android:minSdkVersion="7" />
+	<uses-permission android:name="android.permission.BLUETOOTH" />
+	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+</manifest> 

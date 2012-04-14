@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent" 
+	android:background="@drawable/widget4x1_306x72" android:padding="12dp" android:layout_gravity="center">
+
+	<ImageView android:id="@+id/btSwitchAdvWidget" android:src="@drawable/bt_state_off"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true" android:layout_centerInParent="true"/>
+	
+	<!-- BT Switch Image Button -->
+			
+	<ImageView android:id="@+id/divider1" android:background="@drawable/divider_vertical_bright"
+		android:layout_width="wrap_content" android:layout_height="fill_parent"
+		android:layout_toRightOf="@id/btSwitchAdvWidget" />
+	
+	<!-- Vertical Divider -->
+	
+	<ImageView android:id="@+id/phoneIcon" android:src="@drawable/smartphone"
+		android:layout_width="24dp" android:layout_height="24dp"
+		android:adjustViewBounds="true"
+		android:layout_toRightOf="@id/divider1" />
+	
+	<TextView android:id="@+id/txtAdaptorName" android:text=" "
+	
+		android:layout_toRightOf="@id/phoneIcon" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:textSize = "18sp"></TextView>
+	
+	<!-- First Line Details about the Adaptor -->
+
+	
+	<ImageView android:id="@+id/headPhoneIcon" android:src="@drawable/headphone"
+		android:layout_width="24dp" android:layout_height="24dp"
+		android:adjustViewBounds="true"
+		android:layout_below="@+id/phoneIcon" android:layout_toRightOf="@id/divider1" />
+		
+	<TextView android:id="@+id/txtRemoteDeviceName" android:text=" "
+		android:layout_below="@id/txtAdaptorName" android:layout_toRightOf="@id/headPhoneIcon" 
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:textSize = "18sp"></TextView>
+
+	<!-- Second Line Details about the remote BT Device -->
+
+	<ImageView android:id="@+id/statusIcon" android:src="@drawable/filler38"
+		android:layout_width="24dp" android:layout_height="24dp"
+		android:adjustViewBounds="true"
+		android:layout_below="@+id/headPhoneIcon" android:layout_toRightOf="@id/divider1"  />
+
+	<TextView android:id="@+id/txtStatus"  android:text=" "
+		android:layout_below="@id/txtRemoteDeviceName" android:layout_toRightOf="@id/statusIcon" 
+		android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="bottom"
+		android:textSize = "12sp" android:layout_alignParentBottom="true"></TextView>
+	
+	<!-- Third Line   -->
+	
+	<ImageView android:id="@+id/btSwitchSettings" android:src="@drawable/settings48"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+
+	<!-- Vertical Divider -->
+	
+	<ImageView android:id="@+id/divider2" android:background="@drawable/divider_vertical_bright"
+		android:layout_width="wrap_content" android:layout_height="fill_parent"
+		android:gravity="center" android:layout_toLeftOf="@id/btSwitchSettings" />
+
+	<!-- BT System Settings -->
+
+</RelativeLayout>

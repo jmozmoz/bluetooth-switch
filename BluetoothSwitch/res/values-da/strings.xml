@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="btSwitchWidgetName">BT Switch</string>
+<string name="btSwitchAdvWidgetName">BT Switch Avanceret</string>
+<string name="noBtDevice">Ingen Bluetooth enhed fundet!</string>
+<string name="enableBT">Aktivering Bluetooth</string>
+<string name="disableBT">Deaktivering Bluetooth</string>
+<string name="btDiscoverable">Enhed er synlig</string>
+<string name="btConnectable">Enheden er klar til at tilslutte</string>
+<string name="btNoScan">Scanningstilstand Off</string>
+<string name="btError">Bluetooth Fejl</string>
+<string name="btConnected">tilsluttede enhed</string>
+<string name="btDisConnected">afbrudt enhed</string>
+<string name="btOff">Bluetooth Off</string>
+<string name="btOn">Bluetooth On</string>
+</resources>
