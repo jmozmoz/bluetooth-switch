@@ -479,9 +479,8 @@ public class BtAdvWidgetUpdateService extends Service implements Runnable {
 						remoteView.setTextViewText(R.id.txtAdaptorName,
 								btAdaptorName);
 					}
-				} else {
-					remoteView.setTextViewText(R.id.txtAdaptorName, " ");
 				}
+
 				remoteView.setImageViewResource(R.id.btSwitchAdvWidget,
 						R.drawable.bt_state_on);
 				remoteView.setImageViewResource(R.id.statusIcon,
